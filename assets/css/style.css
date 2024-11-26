@@ -1,0 +1,160 @@
+* {
+    font-family: "Roboto", sans-serif;
+  }
+
+  body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  header{
+    background-color: #343a40;
+
+  }
+h1{ 
+    margin: 5px; color: white; 
+    text-align: center;
+    font-style: oblique;
+}
+  nav {
+    background-color: #343a40;
+    padding: 5px 10px;
+  
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  nav ul li {
+    text-align: center;
+    padding:5px 10px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+  }
+  
+  nav ul li a:hover {
+    background-color: #495057;
+  }
+  
+  main {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+
+#imgRandomDog{ height: 200px;}
+footer{
+    background-color: #343a40;
+    color: white;
+    display: flex;
+}
+
+footer section{ 
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  footer ul li {
+    text-align: center;
+    padding: 5px;
+    width: 300px;
+  }
+  
+  footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+  }
+
+#topProducts{
+    display: flex;
+    justify-content: space-around;
+}
+#topProducts article {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+#topProducts article img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#topProducts article{ text-align: center;}
+
+.productsPage{
+    display: flex;
+    gap: 10px;
+}
+
+.prodCategory{
+  width: 100%;
+}
+
+.prodCategory h4, .prodCategory p{
+    margin:0
+}
+#dogs, #cats, #little{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+}
+#dogs article, #cats article, #little article{
+    width: 200px;
+    border: 1px solid gray;
+}
+
+#dogs article img, #cats article img, #little article img{ width: 100%;}
+.menuCategory{
+    width: 150px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.menuCategory article{ padding: 20px 0px; text-align: center;}
+  @media (min-width: 768px) {
+    nav ul {
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    nav ul li {
+      padding: 5px 20px;
+    }
+  
+    nav ul li a {
+      font-size: 18px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    nav ul li a {
+      font-size: 20px;
+    }
+  }
