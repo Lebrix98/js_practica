@@ -1,5 +1,7 @@
 //[06] Extra: Crear gráfico
 
+import { products, categories } from './data.js'
+
 //Obtener Ventas por categoría
 const getSalesByCategory = () => {
     return categories.map(category => {
